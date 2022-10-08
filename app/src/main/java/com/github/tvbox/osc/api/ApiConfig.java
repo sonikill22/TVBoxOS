@@ -84,7 +84,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/jiamao1/maotv/raw/master/pywd.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
